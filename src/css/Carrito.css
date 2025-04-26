@@ -1,0 +1,219 @@
+
+.carrito-container {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    width: 100%;
+    margin: 10px auto 500px auto;
+  }
+
+  .tabla-carrito {
+    width: 55%;
+    max-width: 55%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
+    table-layout: fixed;
+  }
+
+  .tabla-carrito th, .tabla-carrito td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+  }
+
+  
+
+  .tabla-carrito th {
+    background-color: #0e0d0d;
+  }
+
+h2 {
+    color: #070707;
+}
+
+.foto-carrito {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 5px;
+  }
+
+  .total-carrito {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+    padding: 10px;
+    border-top: 2px solid #ddd;
+    width: 55%;
+  }
+  
+  h3{
+    color: #070707;
+    margin: 0;
+    padding: 0;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    width: 45%;
+}
+
+
+  .pagar-btn {
+    background-color: green;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-left: 20px;
+    width: 150px;
+  }
+
+  .pagar-btn:hover {
+    background-color: darkgreen;
+  }
+
+  .pagar-btn--disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+  
+
+  .cantidad-texto {
+    margin: 0 0px;
+    font-weight: bold;
+  }
+  
+  .tabla-carrito button {
+    background-color: #ff6b6b;
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 0 5px;
+  }
+  
+  .tabla-carrito button:hover {
+    background-color: #ff4b4b;
+  }
+  
+
+  .eliminar-btn {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .eliminar-btn:hover {
+    background-color: darkred;
+  }
+
+  /* columna 6 = precio_total */
+.tabla-carrito th:nth-child(6),
+.tabla-carrito td:nth-child(6){ 
+  width: 100px; 
+  max-width: 100px;
+  overflow: hidden;
+  
+}
+
+/* columna 7 = eliminar */
+.tabla-carrito th:nth-child(7),
+.tabla-carrito td:nth-child(7){ 
+  width: 90px; 
+  max-width: 90px;
+  overflow: hidden;
+  
+}
+
+/* columna 5 = cantidad */
+.tabla-carrito th:nth-child(5),
+.tabla-carrito td:nth-child(5){ 
+  width: 120px; 
+  max-width: 120px;
+  overflow: hidden;
+  
+}
+
+.btn-mas, .btn-menos {
+  margin:auto;
+  font-size: larger;
+  padding: 5px;
+  width: auto;
+  height: auto;
+}
+  
+
+
+ 
+
+
+  /* *****************  ALERTAS  ******************************* */
+  
+.mi-alerta {
+  font-size: 18px; 
+  background: #f8f9fa; 
+  color: #333; 
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); 
+}
+
+/* Centrar completamente la ventana emergente */
+.swal2-popup {
+  width: 700px !important; 
+  height: 400px !important; 
+  font-size: 18px !important; 
+  padding: 20px !important;
+  border-radius: 10px !important; 
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3) !important; 
+  margin-top: 0;
+  margin-bottom: 250px;
+}
+
+.swal2-icon {
+  margin:0 280px 0 280px
+}
+
+
+/* Asegurar que se muestre en el centro */
+.swal2-container {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+.swal2-confirm {
+  background-color: #007bff !important; /* Color del botón */
+  color: white !important; 
+  font-size: 16px !important;
+  border-radius: 5px !important;
+  padding: 10px 20px !important;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2) !important;
+}
+
+/* Efecto hover para el botón */
+.swal2-confirm:hover {
+  background-color: #e74c3c !important; /* Color al pasar el mouse */
+}
+
+/* Estilo para el botón de cancelación (si se usa) */
+.swal2-cancel {
+  background-color: #6c757d !important; /* Color de fondo */
+  color: white !important;
+}
+
+.swal2-cancel:hover {
+  background-color: #5a6268 !important;
+}
+/***********************************************************************************/
+
